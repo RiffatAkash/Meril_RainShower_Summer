@@ -48,7 +48,7 @@ function revealBlocks_one() {
                         setTimeout(function() {
                             block_6.className = block_6.className.replace('hidden', '');
                             block_6.classList ? block_6.classList.add('fadeInZoom') : block_6.className += ' fadeInZoom';
-                            setTimeout(revealBlocks_last, 3e3);
+                            setTimeout(revealBlocks_last, 2e3);
                         }, 300);
                     }, 300);
                 }, 300);
@@ -85,7 +85,7 @@ function revealBlocks_last() {
                 setTimeout(function() {
                     block_15.className = block_15.className.replace('hidden', '');
                     block_15.classList ? block_15.classList.add('fadeInZoom') : block_15.className += ' fadeInZoom';
-                    setTimeout(revealBlocks_middle, 3e3);
+                    setTimeout(revealBlocks_middle, 2e3);
                 }, 300);
             }, 300);
         }, 400);
@@ -118,7 +118,7 @@ function revealBlocks_middle(){
                 setTimeout(function() {
                     block_20.className = block_20.className.replace('hidden', '');
                     block_20.classList ? block_20.classList.add('fadeInZoom') : block_20.className += ' fadeInZoom';
-                    setTimeout(revealBlocks_third, 3e3);
+                    setTimeout(revealBlocks_third, 2e3);
                 }, 300);
             }, 300);
         }, 400);
