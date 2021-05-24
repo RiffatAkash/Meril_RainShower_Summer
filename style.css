@@ -30,14 +30,23 @@
 .col-1 {
     width: 26px;
     height: 72px;
-    left: 15px;
-    top: 23px;
+    left: 0;
+    right: 40px;
+    margin: 0 auto;
+    top: 75px;
+    z-index: 1;
+    font-size: 75px;
+    color: #162b73;
+    font-weight: 600;
 }
 
 .col-2 {
-    width: 62px;
-    left: 31px;
-    top: 21px;
+    width: 18px;
+    left: 90px;
+    right: 00px;
+    margin: 0 auto;
+    top: 85px;
+    z-index: 1;
 }
 
 .col-3 {

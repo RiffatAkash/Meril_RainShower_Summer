@@ -30,9 +30,9 @@ setTimeout(function() {
 function revealBlocks_one() { 
     block_0.className = block_0.className.replace('hidden', '');
     block_0.classList ? block_0.classList.add('fadeInUp') : block_0.className += ' fadeInUp';
+    block_1.className = block_1.className.replace('hidden', '');
+    block_1.classList ? block_1.classList.add('fadeInUp') : block_1.className += ' fadeInUp';
     setTimeout(function() {
-        block_1.className = block_1.className.replace('hidden', '');
-        block_1.classList ? block_1.classList.add('fadeInUp') : block_1.className += ' fadeInUp';
         setTimeout(function() {
             block_2.className = block_2.className.replace('hidden', '');
             block_2.classList ? block_2.classList.add('fadeInUp') : block_2.className += ' fadeInUp';

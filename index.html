@@ -16,11 +16,12 @@
                     <div class="col-1 absolute">
                         <div class="bsti block_0 hidden">
                             <!-- <img src="https://ms.purplepatch.online/slideanim/ruhafja/2020/images/bsti.png" alt="bsti"> -->
+                            <div class="temp"></div>
                         </div>
                     </div>
                     <div class="col-2 absolute">
                         <div class="fresh block_1 hidden">
-                            <!-- <img src="https://ms.purplepatch.online/slideanim/ruhafja/2020/images/bottle.png" alt="ruhafja"> -->
+                            <img src="assets/degree.png" alt="ruhafja">
                         </div>
                     </div>
                     <div class="col-3 absolute block_2 hidden">
@@ -115,6 +116,15 @@
         </div>
     </a>
 
+    <script type="">
+        let temp = document.querySelector('.temp');
+        fetch("https://ms.purplepatch.online/weather_api/")
+            .then(res => res.json())
+            .then(data=>{
+                   let tempValue = data['current']['temp_c'];
+                   temp.innerHTML = tempValue
+            })
+    </script>
     <script type="text/javascript" src="app.js"></script>
 </body>
 
