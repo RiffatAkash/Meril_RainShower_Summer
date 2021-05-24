@@ -85,7 +85,7 @@ function revealBlocks_last() {
                 setTimeout(function() {
                     block_15.className = block_15.className.replace('hidden', '');
                     block_15.classList ? block_15.classList.add('fadeInZoom') : block_15.className += ' fadeInZoom';
-                    setTimeout(revealBlocks_middle, 5e3);
+                    setTimeout(revealBlocks_middle, 3e3);
                 }, 300);
             }, 300);
         }, 400);
@@ -118,7 +118,7 @@ function revealBlocks_middle(){
                 setTimeout(function() {
                     block_20.className = block_20.className.replace('hidden', '');
                     block_20.classList ? block_20.classList.add('fadeInZoom') : block_20.className += ' fadeInZoom';
-                    setTimeout(revealBlocks_third, 5e3);
+                    setTimeout(revealBlocks_third, 3e3);
                 }, 300);
             }, 300);
         }, 400);
