@@ -1,0 +1,265 @@
+/*Style by lincoln*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 300px;
+    height: 250px;
+    position: relative;
+}
+.hidden{
+    display: none;
+}
+.slide_1,.slide_2,.slide_3{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(assets/bg1.jpg);
+    background-size: cover;
+}
+.slide_2 {
+    background-image: url(assets/bg2.jpg);
+}
+.slide_3 {
+    background-image: url(assets/bg3.jpg);
+}
+.absolute{position: absolute;}
+
+.col-1 {
+    width: 26px;
+    height: 72px;
+    left: 15px;
+    top: 23px;
+}
+
+.col-2 {
+    width: 62px;
+    left: 31px;
+    top: 21px;
+}
+
+.col-3 {
+    width: 69px;
+    left: 82px;
+    bottom: 10px;
+}
+
+.col-4 {
+    width: 65px;
+    height: 49px;
+    top: 10px;
+    right: 15px;
+}
+.col-5 {
+    width: 174px;
+    height: 57px;
+    top: 150px;
+    right: 50px;
+}
+.col-6 {
+    width: 130px;
+    height: 49px;
+    bottom: 56px;
+    right: 17px;
+}
+
+.col-7 {
+    width: 118px;
+    height: 29px;
+    bottom: 8px;
+    right: 11px;
+}
+
+.col-11{
+    width: 49px;
+    height: 49px;
+    bottom: 8px;
+    right: 17px;
+    z-index: 1;
+}
+
+.col-12{
+    width: 277px;
+    height: 183px;
+    top: -3px;
+    left: 23px;
+}
+.col-13{
+    width: 175px;
+    height: 46px;
+    top: 89px;
+    left: 62px;
+}
+.col-14{
+    width: 122px;
+    height: 216px;
+    top: 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.col-15{
+    width:300px;
+    height:108px;
+    bottom:-2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-16{
+    width: 49px;
+    height: 49px;
+    bottom: 8px;
+    right: 17px;
+    z-index: 1;
+}
+
+.col-17{
+    width: 182px;
+    height: 90px;
+    top: 50px;
+    right: 10px;
+}
+.col-18{
+    width: 175px;
+    height: 46px;
+    top: 89px;
+    left: 62px;
+}
+.col-19{
+    width: 122px;
+    height: 216px;
+    top: 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.col-20{
+    width:300px;
+    height:108px;
+    bottom:-2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+}
+
+@keyframes fadeInZoom {
+    from {
+        opacity: 0;
+        transform: scale3d(1.3, 1.3, 1.3);
+    }
+    
+}
+@keyframes fadeInZoom2 {
+    from {
+        opacity: 0;
+        transform: scale3d(1.3, 1.3, 1.3);
+        left: 0px;
+    }
+    to{
+        right: 180px;
+        z-index: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0)
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(20px, 0, 0)
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes pan {
+    0% {
+        transform: translate3d(-10%, 0, 0);
+    }
+    90% {
+        transform: translate3d(10%, 0, 0);
+    }
+    100% {
+        transform: translate3d(-10%, 0, 0);
+    }
+}
+
+.pan {
+    animation-name: pan;
+    animation-duration: 18s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scaleX(1)
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+}
+
+.loop {
+    animation-iteration-count: infinite;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both
+}
+
+.fadeInUp,
+.fadeInZoom,.fadeInZoom2 {
+    animation-duration: .5s;
+    animation-fill-mode: both
+}
+
+.fadeInZoom {
+    animation-name: fadeInZoom
+}
+.fadeInZoom2 {
+    animation-name: fadeInZoom2
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: .5s;
+    animation-fill-mode: both
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: .3s;
+    animation-fill-mode: both
+}
