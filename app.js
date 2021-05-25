@@ -111,13 +111,13 @@ function revealBlocks_middle(){
         block_17.classList ? block_17.classList.add('fadeInLeft') : block_17.className += ' fadeInLeft';
         setTimeout(function() {
             block_18.className = block_18.className.replace('hidden', '');
-            block_18.classList ? block_18.classList.add('fadeInLeft') : block_18.className += ' fadeInLeft';
+            block_18.classList ? block_18.classList.add('rain') : block_18.className += ' rain';
             setTimeout(function() {
                 block_19.className = block_19.className.replace('hidden', '');
                 block_19.classList ? block_19.classList.add('fadeInZoom2') : block_19.className += ' fadeInZoom2';
                 setTimeout(function() {
-                    block_20.className = block_20.className.replace('hidden', '');
-                    block_20.classList ? block_20.classList.add('fadeInZoom') : block_20.className += ' fadeInZoom';
+                    // block_20.className = block_20.className.replace('hidden', '');
+                    // block_20.classList ? block_20.classList.add('fadeInZoom') : block_20.className += ' fadeInZoom';
                     setTimeout(revealBlocks_third, 2e3);
                 }, 300);
             }, 300);
@@ -131,9 +131,9 @@ function revealBlocks_third(){
         slide_1.className = slide_1.className.replace('hidden', '');
         block_16.className = block_16.className.replace('fadeInUp', 'hidden');
         block_17.className = block_17.className.replace('fadeInUp', 'hidden');
-        block_18.className = block_18.className.replace('fadeInLeft', 'hidden');
+        block_18.className = block_18.className.replace('rain', 'hidden');
         block_19.className = block_19.className.replace('fadeInZoom2', 'hidden');
-        block_20.className = block_20.className.replace('fadeInZoom', 'hidden');
+        // block_20.className = block_20.className.replace('fadeInZoom', 'hidden');
     }, 10);
     
     setTimeout(revealBlocks_one, 1e2);

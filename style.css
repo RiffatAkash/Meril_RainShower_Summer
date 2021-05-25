@@ -132,10 +132,15 @@
     right: 10px;
 }
 .col-18{
-    width: 175px;
-    height: 46px;
-    top: 89px;
-    left: 62px;
+    width: 300px;
+    /* height: 249px; */
+    height: 93%;
+    top: 0px;
+    left: 0px;
+        background-image: url(assets/rain.png);
+    /* z-index:  1; */
+    /* height: 100%;
+    position: absolute; */
 }
 .col-19{
     width: 122px;
@@ -212,6 +217,11 @@
     }
 }
 
+@keyframes rain2 {
+    0% {background-position: 0% 0%;}
+    100% {background-position: 20% 100%;}
+}
+
 .pan {
     animation-name: pan;
     animation-duration: 18s;
@@ -271,4 +281,7 @@
     animation-name: fadeOut;
     animation-duration: .3s;
     animation-fill-mode: both
+}
+.rain{
+    animation: rain2 0.3s linear infinite;
 }
