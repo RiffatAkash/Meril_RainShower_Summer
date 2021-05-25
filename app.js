@@ -103,15 +103,15 @@ function revealBlocks_middle(){
         block_15.className = block_15.className.replace('fadeInZoom', 'hidden');
     }, 10);
     
-    block_16.className = block_16.className.replace('hidden', '');
-    block_16.classList ? block_16.classList.add('fadeInUp') : block_16.className += ' fadeInUp';
+    block_18.className = block_18.className.replace('hidden', '');
+    block_18.classList ? block_18.classList.add('rain') : block_18.className += ' rain';
 
     setTimeout(function() {
         block_17.className = block_17.className.replace('hidden', '');
         block_17.classList ? block_17.classList.add('fadeInLeft') : block_17.className += ' fadeInLeft';
         setTimeout(function() {
-            block_18.className = block_18.className.replace('hidden', '');
-            block_18.classList ? block_18.classList.add('rain') : block_18.className += ' rain';
+            block_16.className = block_16.className.replace('hidden', '');
+            block_16.classList ? block_16.classList.add('fadeInUp') : block_16.className += ' fadeInUp';
             setTimeout(function() {
                 block_19.className = block_19.className.replace('hidden', '');
                 block_19.classList ? block_19.classList.add('fadeInZoom2') : block_19.className += ' fadeInZoom2';

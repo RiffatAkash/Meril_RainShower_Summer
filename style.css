@@ -137,7 +137,8 @@
     height: 93%;
     top: 0px;
     left: 0px;
-        background-image: url(assets/rainy.png)
+    background-image: url(assets/rainy.png);
+    opacity: 0.5;
     /* z-index:  1; */
     /* height: 100%;
     position: absolute; */
