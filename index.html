@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,30 +24,14 @@
                             <img src="assets/degree.png" alt="ruhafja">
                         </div>
                     </div>
-                    <div class="col-3 absolute block_2 hidden">
-                        <div class="fade">
-                        </div>
-                    </div>
-                    <div class="col-4 absolute block_3 hidden">
-                        <div class="logo">
-                        </div>
-                    </div>
-                    <div class="col-5 absolute block_4 hidden">
+                    <div class="col-5 absolute block_2 hidden">
                         <div class="fruits">
                             <img src="assets/text1.png" alt="">
                         </div>
                     </div>
-                    <div class="col-6 absolute block_5 hidden">
-                        <div class="sorbot">
-
-                        </div>
-                    </div>
-                    <div class="col-7 absolute block_6 hidden">
-                        <div class="link">
-                        </div>
-                    </div>
                 </div>
             </div>
+            
             <div class="slide_2 absolute hidden">
                 <div class="row">
                     <div class="col-11 absolute">
@@ -59,10 +44,6 @@
                             <img src="assets/leaf.png" alt="protikar">
                         </div>
                     </div>
-                    <div class="col-13 absolute block_13 hidden">
-                        <div class="immune">
-                        </div>
-                    </div>
                     <div class="col-14 absolute block_14 hidden">
                         <div class="seba">
                             <img src="assets/pack.png" alt="">
@@ -73,15 +54,14 @@
                             <img src="assets/whitebottom.png" alt="ifo">
                         </div>
                     </div>
-                     
-                    
                 </div>
             </div>
+            <div class="rain"></div>
             <div class="slide_3 absolute hidden">
                 <div class="row">
                     <div class="col-16 absolute">
                         <div class="logo block_16 hidden">
-                            <img src="assets/Logo.png" alt="logo">
+                            <img src="assets/logo.png" alt="logo">
                         </div>
                     </div>
                     <div class="col-17 absolute">
@@ -89,36 +69,21 @@
                             <img src="assets/text2.png" alt="protikar">
                         </div>
                     </div>
-                    <div class="col-18 absolute block_18 hidden">
-                        <div class="immune">
-                        </div>
-                    </div>
                     <div class="col-19 absolute block_19 hidden">
                         <div class="seba">
-                            <img src="assets/Pack.png" alt="">
+                            <img src="assets/pack.png" alt="">
                         </div>
                     </div>
                     <div class="col-20 absolute block_20 hidden">
                         <div class="info">
                             <img src="assets/whitebottom.png" alt="ifo">
                         </div>
-                    </div>
-                     
-                    
+                    </div>                    
                 </div>
             </div>
         </div>
     </a>
 
-    <script type="">
-        let temp = document.querySelector('.temp');
-        fetch("https://ms.purplepatch.online/weather_api/")
-            .then(res => res.json())
-            .then(data=>{
-                   let tempValue = data['current']['temp_c'];
-                   temp.innerHTML = tempValue
-            })
-    </script>
     <script type="text/javascript" src="app.js"></script>
 </body>
 
